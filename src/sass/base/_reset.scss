@@ -1,0 +1,25 @@
+// box-sizing
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+// margin and padding
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// list decoration
+ul[role='list'], ol[role='list'] {
+    list-style: none;
+}
+
+//scroll behavior
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+// link underline
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}

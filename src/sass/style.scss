@@ -8,3 +8,7 @@
 // include base layer
 @use 'base/reset';
 @use 'base/typography';
+
+body {
+    font-family: 'UbuntuCondensed-Regular', sans-serif;
+}
