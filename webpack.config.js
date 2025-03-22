@@ -11,7 +11,6 @@ const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
 
 
-
 const config = {
     devtool: isProduction ? false : 'eval-source-map',
     entry: {
@@ -45,7 +44,13 @@ const config = {
         rules: [
             {
                 test: /\.(js|jsx)$/i,
-                loader: 'babel-loader',
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ["@babel/preset-env", "@babel/preset-react"]
+                    }
+                }
+
             },
             {
                 test: /\.s[ac]ss$/i,
@@ -82,8 +87,8 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
-        
-        
+
+
     } else {
         config.mode = 'development';
     }

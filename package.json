@@ -18,19 +18,20 @@
     "@babel/core": "^7.25.8",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.26.3",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "html-webpack-plugin": "^5.6.2",
     "mini-css-extract-plugin": "^2.9.1",
     "prettier": "^3.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "sass": "^1.80.2",
     "sass-loader": "^16.0.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.1.0"
-  },
-  "dependencies": {
   }
 }
